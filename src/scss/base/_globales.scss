@@ -10,7 +10,7 @@ body {
     font-size: 1.6rem;
 }
 p {
-    color: $blanco;
+    color: $grisOscuro;
     font-size: 2rem;
 }
 .contenedor {
@@ -44,4 +44,8 @@ h2 {
 h3 {
     font-size: 3rem;
     text-align: center;
+}
+ul{
+    list-style: none;
+    padding: 0;
 }

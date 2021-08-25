@@ -1,6 +1,9 @@
 .headerBg{
     background-color: $blancoTrans;
     box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.75);
+    position: sticky;
+    top: 0;
+    z-index: 10;
     .header{
         transition: all 400ms;
         margin-left: -200%;

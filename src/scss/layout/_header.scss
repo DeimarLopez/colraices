@@ -1,0 +1,82 @@
+.headerBg{
+    background-color: $blancoTrans;
+    box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.75);
+    .header{
+        transition: all 400ms;
+        margin-left: -200%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        @include tablet{
+            margin:0;
+            flex-direction: row;
+            position: relative;
+            align-items: center;
+            margin-left: 0%;
+        }
+
+        .header__logo{
+            margin: 0 auto;
+            @include tablet{
+                margin: 1rem 6rem;
+                width: 5rem;
+                height: 5rem;
+            }
+            width: 6rem;
+            height: 6rem;
+            background-image: url('../img/ViajesWeb-01.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .header__nav{
+            
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include tablet{
+                margin-left: 4rem;
+                flex-direction:row;
+                justify-content: space-around;
+                flex-grow: 1;
+                max-width: 50rem;
+            }
+
+            a{
+                padding: 1rem 0;
+                font-size: 2rem;
+                text-transform: uppercase;
+                color: $grisOscuro;
+
+                &:hover{
+                    color: $mostazaOscuro;
+                }
+            }
+        }
+    }
+    #btn-menu{
+        display: none;
+        &:checked ~ .header{
+            margin: 2rem ;
+        }
+    }
+    #btn-menu:checked ~ .header{
+        display: flex;
+    }
+    .menu{
+        display: block;
+        padding: 1rem;
+        width: 5rem;
+        height: 5rem;
+        
+        &:hover{
+            cursor: pointer;
+        }
+
+        @include tablet{
+          display: none;
+        }
+    }
+}

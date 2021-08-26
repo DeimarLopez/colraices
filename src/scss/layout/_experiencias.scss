@@ -1,0 +1,33 @@
+.experiencias{
+    width:80%;
+    margin: 0 auto;
+    .lineatop{
+        border-left: .3rem solid $mostazaOscuro;
+        height: 10rem;
+        margin: 2rem 0;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2{
+        font-size: 2rem;
+        color: $grisClaro;
+        font-weight: 600;
+
+        span{
+            font-size: 3rem;
+            font-weight: 700;
+            display: block;
+
+            &:last-child{
+                color: $mostazaOscuro;
+            }
+        }
+        
+    }
+    p{
+        text-align: center;
+        color: $grisClaro;
+    }
+}

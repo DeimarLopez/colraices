@@ -1,0 +1,71 @@
+.prefooter{
+    .playa{
+        width: 100%;
+        height: 22rem;
+        background-image: url('../img/playa.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2{
+            color: $blanco;
+            span{
+                @include tablet{
+                    font-size: 5rem;
+                }
+                display: block;
+            }
+        }
+    }
+}
+.footer{
+    background-color: $blanco;
+    z-index: 123;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 15rem;
+        height: 15rem;
+        margin: 10rem auto;
+    }
+    .contactanos{
+        margin-bottom: 10rem;
+        h3{
+            color: $grisOscuro;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+        @include tablet {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .hablemos{
+            p{
+                font-size: 1.6rem;
+                font-weight: 400;
+                max-width: 23rem;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+        .redes{
+            .redd{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                justify-items: center;
+                align-items: center;
+                gap: 2rem;
+                img{
+                    width: 3rem;
+                    height: 3rem;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

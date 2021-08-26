@@ -1,0 +1,80 @@
+.reserva{
+    width: 80%;
+    display: grid;
+    margin: 10rem auto;
+    @include tablet{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .reserva__text{
+        h2{
+            color: $grisClaro;
+            font-weight: 500;
+            font-size: 2rem;
+            span{
+                display: block;
+                color: $grisOscuro;
+                font-size: 3rem;
+                font-weight: 700;
+    
+                &:last-child{
+                    color: $mostazaOscuro;
+                }
+            }
+        }
+        p{
+            text-align: center;
+            max-width: 90%;
+            margin: 1rem auto;
+            color: $grisClaro;
+            font-size: 1.7rem;
+        }
+        @include tablet{
+            border-right: .5rem solid $mostazaOscuro;
+        }
+    }
+    .reserva__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        form{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            max-width: 100%;
+            align-items: flex-start;
+            @include tablet{
+                margin-left: 4rem;
+            }
+            input{
+                
+                font-size: 2rem;
+                padding: .3rem 4rem;
+                outline: none;
+                border-radius: 1rem;
+                border: .1rem solid $grisClaro;
+            }
+            .btn{
+                background-color: $mostazaOscuro;
+                color: $blanco;
+                padding: .5rem 1rem;
+                border: none;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        h3{
+            color: $grisOscuro;
+            text-align: right;
+            margin-left: auto;
+            font-weight: 500;
+            margin-right: 2rem;
+            span{
+                text-transform: uppercase;
+                color: $mostazaOscuro;
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.galeria{
+    display: grid;
+    @include tablet{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .galerimg{
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+        height: 45rem;
+        transition: filter 400ms;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        
+
+        &:hover ~ h4{
+            font-size: 4rem;
+            max-width: 100%;
+            color: $blanco;
+            margin:0 auto;
+        }
+
+        h4{
+            font-size: 8rem;
+            color: $mostazaOscuro;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+            max-width: 21rem;
+            z-index: 4;
+        }
+    }
+
+    .bogota{
+        position: relative;
+        .bogota__img{
+            background-image: url('../img/bogota.webp');
+        }
+    }
+    .cali{
+        position: relative;
+        .cali__img{
+            background-image: url('../img/cali.webp');
+        }
+    }
+    .cartagena{
+        position: relative;
+        .cartagena__img{
+            background-image: url('../img/caragena.webp');
+        }
+    }
+    .medellin{
+        position: relative;
+        .medellin__img{
+            background-image: url('../img/medellin.webp');
+        }
+    }
+    .city{
+        position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            filter: grayscale(100%);
+            &:hover{
+                filter: grayscale(0%);
+                cursor: pointer;
+            }
+    }
+}

@@ -1,0 +1,54 @@
+.destino{
+    width: 80%;
+    margin: 1rem auto;
+    h4{
+        color: $grisClaro;
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 6rem;
+        span{
+            color: $mostazaOscuro;
+            display: block;
+            font-size: 3rem;
+        }
+    }
+    p{
+        color: $grisClaro;
+        text-align: center;
+        font-size: 1.9rem;
+        margin-bottom: 6rem;
+    }
+    .paises{
+        margin-bottom: 6rem;
+        ul{
+            display: flex;
+            flex-direction: column;
+            row-gap: 4rem;
+            width: 70%;
+            margin: 0 auto;
+            @include tablet{
+                flex-direction: row;
+            }
+            li{
+                flex-grow: 1;
+                padding-bottom: .5rem;
+                border-bottom: .1rem solid $mostazaOscuro;
+
+                @include tablet{
+                    border: 0;
+                    padding: 0;
+                }
+                a{
+                    font-size: 2rem;
+                    color: $grisOscuro;
+                    font-weight: 600;
+
+                    &:hover{
+                        color: $mostazaOscuro;
+                    }
+                }
+            }
+        }
+    }
+
+}
